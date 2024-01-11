@@ -1,0 +1,20 @@
+LISTA DE IMPLEMENTAÇÕES A SEREM FEITAS
+
+[ x ] Finalizar Despesa e Receitas
+[ x  ] Configurar o Flex
+[ x ] Formatar a data
+[ x ] Implementar tratativas de erros no back end
+[ x ] Ao editar um cpf ou um fornecedor veirificar se ja nao existe o mesmo no cadastro
+[ x ] Colocar um button de simulação de fechar? para as paginas
+[ x ] Adiconar mascara para o campo  cpf
+[ x ] Usar e implementar o Spring Security
+[ x ] Modal com dados dos clientes e dos fornecedores?
+[ x ] Adcionar validação de data de vencimento
+
+Colocar na documentação as melhorias a serem implementadas:
+-> Adicionar filtros no front end
+-> Adiconar relatorios financeiros
+-> Adicionar campo de deixar o cliente ou Fornecedor inativo ?
+-> Pagina de relatorios ?
+-> Adicionar filtros nas contas a pagar e a receber
+-> Proteger as rotas
