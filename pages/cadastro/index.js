@@ -5,13 +5,14 @@ import Image from "next/image";
 import {useForm} from "react-hook-form";
 import axios from "axios";
 import {http} from "@/utils/http";
-import {router} from "next/client";
 import Link from "next/link";
+import { useRouter } from 'next/router';
 
 function Index(props) {
     const [errorApi, setErroApi] = useState("")
     const [resultErro, setResultErro] = useState(false)
     const [status, setStatus] = useState([false])
+    const router  = useRouter();
 
 
     const {
