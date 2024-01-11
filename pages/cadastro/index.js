@@ -1,4 +1,4 @@
-'use cliente'
+'use client';
 import React, {useState} from 'react';
 import Head from "next/head";
 import Image from "next/image";
@@ -27,7 +27,6 @@ function Index(props) {
             .then((response) => {
                 console.log(response.data)
                 setStatus(true)
-                reset()
                 router.push("/login")
             })
             .catch((error)=> {
