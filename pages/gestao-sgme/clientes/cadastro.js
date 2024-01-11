@@ -24,6 +24,15 @@ function Cadastro(props) {
 
     const onSubmit = async (data) => {
         const dataUser = getUserFromCookie();
+
+        const cpfCleaned = data.cpf.replace(/\D/g, '');
+        data.cpf = cpfCleaned;
+
+        if (data.telefone) {
+            const telefoneCleaned = data.telefone.replace(/\D/g, ''); // Remove caracteres não numéricos
+            data.telefone = telefoneCleaned;
+        }
+
         data = {...data, usuario_id: dataUser.usuario.id}
 
         try {

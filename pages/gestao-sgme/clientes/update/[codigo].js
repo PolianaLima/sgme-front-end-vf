@@ -5,7 +5,6 @@ import axios from "axios";
 import Head from "next/head";
 import {http} from "@/utils/http";
 import ModalComponent from "@/components/ModalComponent";
-import ButtonFechar from "@/components/ButtonFechar";
 import {getUserFromCookie} from "@/utils/Cookies";
 import InputMask from "react-input-mask";
 
@@ -65,6 +64,14 @@ const UpdateCliente = () => {
 
     const handleUpdateCliente = async () => {
         const dataUser = getUserFromCookie();
+        
+        const cpfCleaned = cliente.cpf.replace(/\D/g, '');
+        cliente.cpf = cpfCleaned;
+      
+        if (cliente.telefone) {
+            const telefoneCleaned = cliente.telefone.replace(/\D/g, '');
+            cliente.telefone = telefoneCleaned;
+        }
 
         await http.put(`/clientes/${codigo}`, cliente, {
             headers: {
@@ -89,7 +96,6 @@ const UpdateCliente = () => {
         openModal()
     }
 
-    console.log(errorApi)
     const handleInputChange = (e) => {
         setCliente({...cliente, [e.target.name]: e.target.value});
     };

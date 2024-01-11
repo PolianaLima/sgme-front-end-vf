@@ -1,0 +1,8 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/gestao-sgme/clientes/cadastro": "pages/gestao-sgme/clientes/cadastro.js",
+  "/gestao-sgme/clientes": "pages/gestao-sgme/clientes.js",
+  "/gestao-sgme/clientes/update/[codigo]": "pages/gestao-sgme/clientes/update/[codigo].js"
+}
