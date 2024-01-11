@@ -2,13 +2,10 @@
 import {useRouter} from "next/router";
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-import {url} from "@/utils/url";
 import Head from "next/head";
-import ButtonFechar from "@/components/ButtonFechar";
 import {getUserFromCookie} from "@/utils/Cookies";
 import {http} from "@/utils/http";
 import ModalComponent from "@/components/ModalComponent";
-import data from "bootstrap/js/src/dom/data";
 
 const UpdateFornecedor = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -21,7 +18,6 @@ const UpdateFornecedor = () => {
         setModalIsOpen(false);
         router.push('/gestao-sgme/fornecedores')
     };
-
 
     const router = useRouter();
 
