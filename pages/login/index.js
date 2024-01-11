@@ -27,7 +27,7 @@ function Index(props) {
     
     const onSubmit = async (data) => {
         const response = http.post(
-            "http://localhost:8080/auth/login",
+            "/auth/login",
             data
         )
             .then((response) => {
